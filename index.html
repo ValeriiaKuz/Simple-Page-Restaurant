@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>FOOD</title>
+</head>
+<body>
+    <header class="header">
+        <div class="sidebar">
+            <div class="logo"><img src="img/logo.svg"></div>
+            <button class="menu-nav">
+                <span class="nav-button-icon"></span>
+            </button>
+            <div class="contacts-web">
+                <ul>
+                    <li><a href="https://www.youtube.com"><img src="img/youtube.svg"></a></li>
+                    <li><a href="https://www.vk.com"><img src="img/vk.svg"></a></li>
+                    <li><a href="https://www.telegram.org"><img src="img/telegram.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title"><h1>Видовой ресторан Food Exxe Relo <br>на Крестовском острове</h1></div>
+        <div class="nav">
+            <ul>
+                <li><a href="#menu" class="navigation">Меню</a></li>
+                <li><a href="#contacts" class="navigation">Контакты</a></li>
+                <li><a href="#" class="navigation">Оплата</a></li>
+                <li><a href="#" class="booking book-modal">Бронь столика</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="desc" id="about">
+                <p class="desc-title1">о ресторане</p>
+                <h2 class="desc-title2">Food Exxe Relo</h2>
+                <p class="desc-text">Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum.<br><br>Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. In adipiscing tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.</p>
+            </div>
+            <div class="menu" id="menu">
+                <p class="menu-title1">меню</p>
+                <h2 class="menu-title2">Меню</h2>
+                <p class="menu-desc">At faucibus nullam mauris vitae ut non. Augue libero non nibh nec, et eget erat. Nascetur nunc neque, varius massa aliquam interdum turpis massa. Ac tortor aliquam risus, interdum nisl mauris sit. Ut placerat fermentum pellentesque ac at. Vitae venenatis faucibus urna mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat rutrum dolor, vitae morbi.<br><br>Nunc cras cras aliquet blandit faucibus massa sagittis semper. </p>
+            </div>
+            <div class="menu-img">
+                <div class="main-menu">
+                    <a href="#">
+                        <img src="img/main.png">
+                        <span>Основное меню</span>
+                    </a>
+                </div>
+                <div class="bar">
+                    <a href="#">
+                        <img src="img/bar.png">
+                        <span>Барная карта</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="contacts-title">контакты</div>
+                <div class="all-contacts">
+                    <div class="time-to-go">
+                        <div class="spb"> <span class="number">2</span> <span class="minuts">мин</span><br> из центра Санкт-Петербурга</div>
+                        <div class="zel"> <span class="number">12</span> <span class="minuts">мин</span><br> из города Зеленогорск</div>
+                        <div class="pulk"> <span class="number">42</span> <span class="minuts">мин</span><br> из аэропорта Пулково</div>
+                        <div class="pavl"> <span class="number">52</span> <span class="minuts">мин</span><br> из города Павловск</div>
+                    </div>
+                    <div class="time-to-work">
+                        <span class="location">Санкт-Петербург, Северная дорога, 11</span>
+                        <span class="phone">+7 (921) 777-77-77</span>
+                        <h4>Время работы</h4>
+                        <span>Вск-Чт с 12:00 до 23:00</span>
+                        <span>Пт-Сб с 12:00 до 03:00</span>
+                        <div class="nav-contacts">
+                            <button class="book-modal">Бронь столика</button>
+
+                            <a href="#"> Задать вопрос </a>
+                        </div>
+                    </div>
+                    <div class="map"><img src="img/map.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-items">
+            <div class="logo-footer"><img src="img/logo.svg"></div>
+            <a href="#">Политика конфиденциальности</a>
+            <div class="footer-disign">Дизайн d-e-n.ru</div>
+        </div>
+    </footer>
+    <div class="modal hidden">
+        <div class="modal-window">
+            <button class="modal-close"><img src="img/close.svg"></button>
+            <form class="modal-wrapper" id="form" action="#" method="post">
+                <img  class='modal-logo'src="img/logo.svg">
+                <span>Забронировать столик</span>
+                <input type="text" placeholder="Имя" class="input-modal" required maxlength="25" pattern="^[A-Za-zА-Яа-яЁё\s]+$" title="Только буквы">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"   placeholder="Телефон" class="input-modal" required title="XXX-XXX-XXXX">
+                <div class="modal-items">
+                    <input type="number" value="" min="1" max="20" placeholder="Гостей" class="guests" required>
+                    <input type="time" placeholder="Время" class="time" required>
+                </div>
+                <button class="modal-booking" type="submit">Забронировать</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-menu hidden">
+        <div class="modal-menu-window">
+            <div class="card-window">
+                <div>
+                    <div class="modal-menu-logo"><img src="img/logo.svg" alt=""></div>
+                    <button class="modal-menu-close"><img src="img/close.svg" alt=""></button>
+                </div>
+
+                <ul class="modal-menu-nav">
+                    <li><a href="#about">О ресторане</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <button class="book-modal modal-menu-book">Бронь столика</button>
+                </ul>
+                <ul class="modal-contacts-web">
+                    <li><a href="#"><img src="img/youtube.svg"></a></li>
+                    <li><a href="#"><img src="img/vk.svg"></a></li>
+                    <li><a href="#"><img src="img/telegram.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="js/myjs.js"></script>
+</body>
+</html>
